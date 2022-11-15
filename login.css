@@ -1,0 +1,116 @@
+.header-login{
+  width: 100%;
+  height: 75vh;
+  background: url("https://images.pling.com/img/00/00/63/25/08/1711581/1920x1080-16450349808531.jpg")no-repeat;
+  background-size: cover;
+}
+.con-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+.con-con1{
+  width: 40%;
+  height: 400px;
+  box-shadow: 0px 0px 5px 0.5px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 30px;
+}
+.con-con2{
+  width: 40%;
+  height: 440px;
+  box-shadow: 0px 0px 5px 0.5px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  display: none;
+  margin: 30px;
+}
+.con-head{
+  text-align: center;
+  font-size: 30px;
+  padding: 15px 0px;
+  font-weight: bold;
+}
+.inter-con{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inter-con h2{
+  padding-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+.int-con{
+  margin: 5px 0px;
+}
+.int-con p{
+  padding: 8px 0;
+  font-size: 20px;
+}
+.int-con input{
+  padding: 13px 5px;
+  width: 28vw;
+}
+.inter-con a{
+  color: blueviolet;
+  cursor: pointer;
+}
+#con-btn{
+  padding: 12px 35px;
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid black;
+  font-size: 15px;
+  margin: 20px 0px;
+}
+#con-btn:hover{
+  background-color: black;
+  color: white;
+  transition-duration: 0.3s;
+}
+.center{
+  text-align: center;
+}
+
+@media(max-width: 740px){
+   .con-con1{
+    width: 80%;
+   }
+   .con-con1 form{
+    width: 100%;
+   }
+   .con-con2{
+    width: 80%;
+   }
+   .con-con2 form{
+    width: 100%;
+   }
+   .int-con{
+    width: 90%;
+   }
+   .int-con input{
+    padding: 13px 5px;
+    width: 100%;
+  }
+}
+
+@media(max-width: 350px){
+  .con-head{
+    font-size: 25px;
+  }
+  .con-con2{
+    height: 460px;
+   }
+}

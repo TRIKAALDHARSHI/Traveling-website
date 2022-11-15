@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="letsgo.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="Hotel.css">
+  <link rel="stylesheet" href="ticket.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header-ticket">
+    <div class="navbar" id="nav">
+      <div class="logo" id="lg">
+        <h3>DesiTraveller</h3>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="letsgo.html">Travel</a></li>
+        <li><a href="ticket.html">Tickets</a></li>
+        <li><a href="Hotels.html">Hotel</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Login.html">Contact</a></li>
+      </ul>
+
+      <div class="dropdown-menu">
+        <div class="nav">
+          <img src="icons\menuicon.png" alt="" onclick="navdrop()">
+        </div>
+        <ol id="nav-ol">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="letsgo.html">Travel</a></li>
+          <li><a href="ticket.html">Tickets</a></li>
+          <li><a href="Hotels.html">Hotel</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Login.html">Contact</a></li>
+        </ol>
+      </div>
+
+    </div>
+    <div class="header-content-about">
+      <div class="header1">
+        <h1>Book Tickets</h1>
+        <h3>Safety | Security | Punctuality</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-tic">
+    <div class="trans">
+
+      <div class="variety">
+        <div class="fly">
+          <i class="fa-sharp fa-solid fa-plane"></i>
+          <p>Flights</p>
+        </div>
+        <div class="fly">
+          <i class="fa-solid fa-bus"></i>
+          <p>Buses</p>
+        </div>
+        <div class="fly">
+          <i class="fa-solid fa-ship"></i>
+          <p>Cruise</p>
+        </div>
+        <div class="fly">
+          <i class="fa-brands fa-wpexplorer"></i>
+          <p>Explore</p>
+        </div>
+      </div>
+
+      <div class="trans-head">
+        <i class="fa-solid fa-train-subway"></i>
+        <p>Book railway tickets</p>
+      </div>
+
+      <div class="book">
+        <div class="bk">
+          <label>Departure</label>
+          <input type="text" id="depart" placeholder="Depart from">
+        </div>
+        <div class="bk">
+          <label>Going To</label>
+          <input type="text" id="goin" placeholder="Going To">
+        </div>
+        <div class="bk">
+          <label>Departure date</label>
+          <input type="date" id="departdate">
+        </div>
+        <div class="bk">
+          <label></label>
+          <button>Search</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container1-tic">
+    <h2>Trending Packages</h2>
+    <div class="crousel-tic">
+      <div class="prev-next" id="prev">
+        <button><i class="fa-solid fa-angle-left"></i></button>
+      </div>
+      <div class="crou" id="crou1">
+        <p>East India Package</p>
+      </div>
+      <div class="crou" id="crou2">
+        <p>North India Package</p>
+      </div>
+      <div class="crou" id="crou3">
+        <p>West India Package</p>
+      </div>
+      <div class="crou" id="crou4">
+        <p>South India Package</p>
+      </div>
+      <div class="prev-next" id="next">
+        <button><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container2-tic">
+    <h2>FAQ</h2>
+    <div class="faq-tic">
+      <div class="faq">
+        <div class="faq1" onclick="FAQ1(0)">
+          <p>What are the advantages of online train booking ?</p>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="faq-info">
+          There are many advantages of online bus ticket booking.
+          You can choose your preferred seats.
+          Online bus ticket booking keeps you away from the long queues of the offline ticket counters.
+          You can view plenty of buses and choose an appropriate bus for your travel considering the amenities, reviews,
+          ratings and bus images available.
+          You can choose the preferred bus type (Volvo Bus, AC or Non AC) and also pickup and dropping point and
+          timings.
+          Your tickets can be booked at a reasonable price with multiple payment options.
+        </div>
+
+      </div>
+      <div class="faq">
+        <div class="faq1" onclick="FAQ1(1)">
+          <p>Can we book Intrastate railway bookings</p>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="faq-info">
+          Yes, almost all fleets of state road transport corporation buses will be enabled from IRCTC. For example,
+          UPSRTC, APSRTC, GSRTC, OSRTC, Kerala RTC, etc.
+        </div>
+
+      </div>
+      <div class="faq">
+        <div class="faq1" onclick="FAQ1(2)">
+          <p>Do I need to create an account on DesiTraveller to book tickets</p>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="faq-info">
+          DesiTraveller login credentials can be used for booking the bus tickets. In case, customer does not have IRCTC
+          login
+          he can book through guest user login by providing required email id and mobile no.
+        </div>
+
+      </div>
+      <div class="faq">
+        <div class="faq1" onclick="FAQ1(3)">
+          <p>Can I cancel my train tickets any time</p>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="faq-info">
+          Yes, you can. Cancellations can only be done online for online bookings through www.bus.irctc.co.in.
+        </div>
+
+      </div>
+      <div class="faq">
+        <div class="faq1" onclick="FAQ1(4)">
+          <p>What are the payments options ?</p>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="faq-info">
+          We accept all payment options to complete your booking like Debit card, Credit card, Net banking, Wallets and
+          UPI.
+        </div>
+
+      </div>
+      <div class="faq">
+        <div class="faq1" onclick="FAQ1(5)">
+          <p>How many passengers can be booked in one transactions</p>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="faq-info">
+          Maximum 6 passengers can be booked in one transaction.
+        </div>
+
+      </div>
+      <div class="faq">
+        <div class="faq1" onclick="FAQ1(6)">
+          <p>Is the name chane or gender change permissable</p>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="faq-info">
+          No, name change or gender change is not allowed. In case of changes, it is to be cancelled and go for fresh
+          booking.
+        </div>
+
+      </div>
+      <div class="faq">
+        <div class="faq1" onclick="FAQ1(7)">
+          <p>Is ID proof required for booking</p>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="faq-info">
+          No. However, it is mandatory to carry one govt. id card having the same name on the ticket.
+        </div>
+
+      </div>
+      <div class="faq">
+        <div class="faq1" onclick="FAQ1(8)">
+          <p>Can partial cancellation be done</p>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="faq-info">
+          Yes, partial cancellation of passengers is allowed.
+        </div>
+
+      </div>
+      <div class="faq">
+        <div class="faq1" onclick="FAQ1(9)">
+          <p>Can we change / modify dates after booking</p>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="faq-info" onclick="FAQ1()">
+          No. In such cases booking needs to be cancelled and to be rebooked. Cancellation charges as per policy shall
+          levy.
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot1">
+      <p>Want to receive exclusive hotel offers? Subscribe to our newsletter!</p>
+      <div class="news-email">
+        <input type="email" placeholder="Email address">
+        <button id="foot-btn">Subscribe</button>
+      </div>
+    </div>
+    <div class="foot2">
+      <div class="foot2-1">
+        <p><b>DesiTraveller - </b>Farid Nagar, Bhandup west, Mumbai-400078</p>
+        <div class="social">
+          <a href="https://www.instagram.com/chicksforclimate/"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.instagram.com/chicksforclimate/"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/chicksforclimate/"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="https://www.instagram.com/chicksforclimate/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/chicksforclimate/"><i class="fa-brands fa-square-youtube"></i></a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <select name="cars" id="cars">
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="Oman">Oman</option>
+          <option value="Nepal">Nepal</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="Norway">Norway</option>
+          <option value="Germany">Germany</option>
+        </select>
+      </div>
+    </div>
+    <div class="foot3">
+      <div class="grid">
+        <div class="grid-link">
+          <a href="">Company</a>
+          <a href="">Jobs</a>
+          <a href="">Press</a>
+          <a href="">Investor relations</a>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid-link">
+          <a href="">Mobile apps - searching on the go</a>
+          <a href="">DesiTraveller Business Studio</a>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid-link">
+          <a href="">Learn how DesiTraveller works</a>
+          <a href="">Terms and condition</a>
+          <a href="">Legal information</a>
+          <a href="">Privacy notice</a>
+          <a href="">Cyber Security</a>
+          <a href="">Coronavirus (COVID-19) travel advice</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot4">
+      <h2>DesiTraveller</h2>
+      <p>Copyright 2022 DesiTraveller | All rights reserved</p>
+      <p>Website designed and Made by - <b>Rajkamal Yadav</b></p>
+    </div>
+  </footer>
+  <script src="style.js"></script>
+  <script src="Hotels.js"></script>
+  <!-- <script src="letsgo.js"></script> -->
+  <script src="https://kit.fontawesome.com/13dda6b84a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

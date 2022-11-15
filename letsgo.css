@@ -1,0 +1,142 @@
+.header-letsgo{
+  width: 100%;
+  height: 75vh;
+  background: url('https://www.muchbetteradventures.com/magazine/content/images/2021/11/best-mountaineering-books-1.jpg')no-repeat;
+}
+.hc-letsgo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.hc-letsgo .hc-1{
+  color: white;
+  text-shadow: 2px 1px black;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hc-1 h1{
+  padding: 10px 0;
+  font-size: 75px;
+}
+.con-letsgo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.con-slides{
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px 0px 0px;
+}
+.con-slides p{
+  padding: 0 50px 10px 50px; 
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+.c-letsgo-card{
+  width: 80vw;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-card{
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  box-shadow: 0 0 2px 1px grey;
+}
+.c-card img{
+  width: 100%;
+  height: 200px;
+}
+.c-card h3{
+  padding: 25px;
+}
+.c-card p{
+  padding: 10px 25px;
+}
+.c-card button{
+  font-size: 17px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  width: 140px;
+  margin: 25px;
+}
+.c-card button:hover{
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+.slider{
+  display: none;
+}
+.card{
+  display: flex;
+}
+
+@media(max-width:1030px){
+  .card{
+    display: flex;
+    flex-direction: column;
+  }
+  .c-card{
+    margin: 20px 0;
+    width: 500px;
+    height: 600px;
+  }
+  .c-card img{
+    width: 100%;
+    height: 300px;
+  }
+}
+@media(max-width:550px) {
+  .hc-1 h1{
+    font-size: 40px;
+  }
+  .con-letsgo{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+  }
+  .con-slides{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 0px 0px;
+  }
+  .con-slides p{
+    padding: 0 30px 10px 30px; 
+    cursor: pointer;
+    border-bottom: 1px solid black;
+  }
+}
+@media(max-width:515px){
+  .c-card{
+    width: 330px;
+    height: 480px;
+  }
+  .c-card img{
+    height: 190px;
+  }
+  .con-slides p{
+    padding: 0 18px 8px 18px; 
+    cursor: pointer;
+    border-bottom: 1px solid black;
+  }
+}

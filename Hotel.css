@@ -1,0 +1,231 @@
+.header-hotel{
+  width: 100%;
+  height: 75vh;
+  background: url("https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2022/04/12/1329/MUMGH-P0765-Inner-Courtyard-Hotel-Exterior-Evening.jpg/MUMGH-P0765-Inner-Courtyard-Hotel-Exterior-Evening.16x9.jpg")no-repeat;
+  /* background-color: aqua; */
+  background-size: cover;
+}
+.container-hotel{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.sort-hotel{
+  width: 80%;
+  display: flex;
+  padding: 50px 0;
+  align-items: center;
+  justify-content: center;
+}
+#search{
+  padding: 13px;
+  width: 75%;
+}
+#hotel-search-btn{
+  padding: 14px;
+  background-color: white;
+  margin-left: -42px;
+  border: none;
+  color: black;
+}
+.check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+#hotel-btn{
+  width: 100px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: large;
+  margin-left: 30px;
+}
+#hotel-btn:hover{
+  background-color: black;
+  color: white;
+  transition-duration: 0.3s;
+}
+#hotel-region{
+  padding: 30px 0;
+  width: 50vw;
+  text-align: left;
+}
+.hori-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  padding: 8px;
+  box-shadow: 0 0 5px 0;
+  border-radius: 7px;
+  margin: 10px 0;
+}
+.hori-card img{
+  width: 20%;
+  border-radius: 7px;
+}
+.hori-card-con1{
+  padding: 0px 20px;
+  width: 50%;
+}
+.hori-name{
+  padding: 0 0 15px 0;
+  font-size: large;
+  text-align: center;
+}
+.hori-rate{
+  padding: 0 0 15px 0;
+  color: gold;
+}
+.hori-price{
+  padding: 0 0 15px 0;
+}
+.hori-card-con2{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 0 28px;
+  font-size: 20px;
+}
+.hori-card-con3{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hori-card-con3 button{
+  padding: 10px 13px;
+  border: none;
+  background-color: rgb(4, 180, 4);
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+} 
+.Hcon3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+.Hcon3 h3{
+  text-align: left;
+}
+.hotels-con3{
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20 0px;
+}
+.hotels-con3 .hotel-con1{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  padding-top: 20px;
+}
+.hotel-con1 p {
+  padding: 6px;
+}
+#hori-mumbai{
+  display:none ;
+}
+.searbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width:620px){
+  .check{
+    display: none;
+  }
+  .searbtn{
+    width:100% ;
+  }
+}
+
+@media(max-width : 850px){
+  .hotel-list{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hor1{
+    width: 100%;
+  }
+  .hori-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px;
+    box-shadow: 0 0 5px 0;
+    border-radius: 7px;
+  }
+  .hori-card img{
+    width: 100%;
+  }
+  .hori-card-con1{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hori-card-con3{
+    width: 100%;
+  }
+  #heart{
+    display: none;
+  }
+  #hotel-region{
+    width: 100%;
+    text-align: center;
+  }
+  .hotels-con3{
+    width: 100%;
+  }
+}
+
+@media(max-width:400px){
+  .hotel-list{
+    width: 100%;
+  }
+  .hor1{
+    width: 100%;
+  }
+  .hori-card{
+    padding: 0 0 10px 0px;
+    margin: 0 0 20px 0px;
+    width: 88vw;
+  }
+  .hori-card img{
+    border-radius: 7px 7px 0 0;
+  }
+  .hotels-con3{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hotels-con3 .hotel-con1 {
+    width: 100%;
+    text-align: center;
+}
+}

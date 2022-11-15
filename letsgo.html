@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="letsgo.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header-letsgo">
+    <div class="navbar" id="nav">
+      <div class="logo" id="lg">
+        <h3>DesiTraveller</h3>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="letsgo.html">Travel</a></li>
+        <li><a href="ticket.html">Tickets</a></li>
+        <li><a href="Hotels.html">Hotel</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Login.html">Contact</a></li>
+      </ul>
+
+      <div class="dropdown-menu">
+        <div class="nav">
+          <img src="icons\menuicon.png" alt="" onclick="navdrop()">
+        </div>
+        <ol id="nav-ol">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="letsgo.html">Travel</a></li>
+          <li><a href="ticket.html">Tickets</a></li>
+          <li><a href="Hotels.html">Hotel</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Login.html">Contact</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="hc-letsgo">
+      <div class="hc-1">
+        <h1>Travel</h1>
+        <p>Jobs fill your pockets, but adventures fill your soul</p>
+      </div>
+    </div>
+  </div>
+  <div class="con-letsgo">
+    <div class="con-slides">
+      <p class="sli" onclick="controller1()"><b>River</b></p>
+      <p class="sli" onclick="controller2()"><b>Metropolitan</b></p>
+      <p class="sli" onclick="controller3()"><b>Mountains</b></p>
+    </div>
+    <div class="c-letsgo-card">
+      <div class="slider">
+        <div class="card">
+          <div class="c-card">
+            <img src="https://indiathrills.com/wp-content/uploads/2020/02/Bungee-Jumping-Rishikesh.jpg" alt="">
+            <h3>Bungee-Jumping</h3>
+            <center>
+              <hr width="80%" style="text-align:center;">
+            </center>
+            <p>Rishikesh, India</p>
+            <p>Open - Monday to Friday </p>
+            <p>1500Rs per person</p>
+            <button id="letsgo-book">Book Now</button>
+          </div>
+
+          <div class="c-card">
+            <img
+              src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/201811/varanasi-5-920x580_660_111318023024.jpg"
+              alt="">
+            <h3>Houseboat Ride</h3>
+            <center>
+              <hr width="80%" style="text-align:center;">
+            </center>
+            <p>Varanasi-Kashi</p>
+            <p>Open - Everyday</p>
+            <p>3000Rs for 3 days</p>
+            <button id="letsgo-book">Book Now</button>
+          </div>
+
+          <div class="c-card">
+            <img src="https://www.keralatourism.org/images/houseboat-640x360.jpg" alt="">
+            <h3>Houseboat Ride</h3>
+            <center>
+              <hr width="80%" style="text-align:center;">
+            </center>
+            <p>Kochi</p>
+            <p>Open - Summers & Winters</p>
+            <p>3000Rs per person</p>
+            <button id="letsgo-book">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="card">
+          <div class="c-card">
+            <img src="https://www.planetware.com/wpimages/2020/09/oregon-best-cities-portland.jpg" alt="">
+            <h3>Portland</h3>
+            <center>
+              <hr width="80%" style="text-align:center;">
+            </center>
+            <p>Portland, Oregon</p>
+            <p>Open - Best during springs</p>
+            <p>30000Rs for a week</p>
+            <button id="letsgo-book">Book Now</button>
+          </div>
+
+          <div class="c-card">
+            <img src="https://www.planetware.com/wpimages/2020/11/europe-top-attractions-eiffel-tower.jpg" alt="">
+            <h3>Eiffel Tower</h3>
+            <center>
+              <hr width="80%" style="text-align:center;">
+            </center>
+            <p>Paris, France</p>
+            <p>Open - best during Autumn & snow</p>
+            <p>25000Rs for 5 days</p>
+            <button id="letsgo-book">Book Now</button>
+          </div>
+
+          <div class="c-card">
+            <img
+              src="https://www.royalvegascasino.com/blogrvc/images/uploads/www_royalvegas_com/2016/11/Statue-of-Liberty.jpg"
+              alt="">
+            <h3>Statue of Liberty</h3>
+            <center>
+              <hr width="80%" style="text-align:center;">
+            </center>
+            <p>New York, USA</p>
+            <p>Open - Everyday</p>
+            <p>30000Rs for 7 days</p>
+            <button id="letsgo-book">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="card">
+          <div class="c-card">
+            <img
+              src="https://images.thrillophilia.com/image/upload/s--6OJtZycg--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/004/132/original/1587112094_Dharamshala.jpg.jpg"
+              alt="">
+            <h3>Dharamshala</h3>
+            <center>
+              <hr width="80%" style="text-align:center;">
+            </center>
+            <p>Dharamshala, Himachal Pradesh</p>
+            <p>Open - best in winters</p>
+            <p>10000Rs for a week</p>
+            <button id="letsgo-book">Book Now</button>
+          </div>
+
+          <div class="c-card">
+            <img src="https://jameskaiser.com/wp-content/uploads/2016/07/sunrise-grand-canyon.jpg" alt="">
+            <h3>Grand Canyon</h3>
+            <center>
+              <hr width="80%" style="text-align:center;">
+            </center>
+            <p>Grand Canyon, USA</p>
+            <p>Open - Everyday</p>
+            <p>30000Rs per person</p>
+            <button id="letsgo-book">Book Now</button>
+          </div>
+
+          <div class="c-card">
+            <img
+              src="https://lh3.googleusercontent.com/EQdefYW2SBCl_MG7coxBowcVZY5x0VCel5rLAZ0PfQOoI0pTZ4tSN8fSj-wHI3gG"
+              alt="">
+            <h3>Mount Fuji</h3>
+            <center>
+              <hr width="80%" style="text-align:center;">
+            </center>
+            <p>Mount Fuji, Japan</p>
+            <p>Open - Best during Autumn</p>
+            <p>20000Rs for 4 days</p>
+            <button id="letsgo-book">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="foot1">
+      <p>Want to receive exclusive hotel offers? Subscribe to our newsletter!</p>
+      <div class="news-email">
+        <input type="email" placeholder="Email address">
+        <button id="foot-btn">Subscribe</button>
+      </div>
+    </div>
+    <div class="foot2">
+      <div class="foot2-1">
+        <p><b>DesiTraveller - </b>Farid Nagar, Bhandup west, Mumbai-400078</p>
+        <div class="social">
+          <a href="https://www.instagram.com/chicksforclimate/"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.instagram.com/chicksforclimate/"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/chicksforclimate/"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="https://www.instagram.com/chicksforclimate/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/chicksforclimate/"><i class="fa-brands fa-square-youtube"></i></a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <select name="cars" id="cars">
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="Oman">Oman</option>
+          <option value="Nepal">Nepal</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="Norway">Norway</option>
+          <option value="Germany">Germany</option>
+        </select>
+      </div>
+    </div>
+    <div class="foot3">
+      <div class="grid">
+        <div class="grid-link">
+          <a href="">Company</a>
+          <a href="">Jobs</a>
+          <a href="">Press</a>
+          <a href="">Investor relations</a>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid-link">
+          <a href="">Mobile apps - searching on the go</a>
+          <a href="">DesiTraveller Business Studio</a>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid-link">
+          <a href="">Learn how DesiTraveller works</a>
+          <a href="">Terms and condition</a>
+          <a href="">Legal information</a>
+          <a href="">Privacy notice</a>
+          <a href="">Cyber Security</a>
+          <a href="">Coronavirus (COVID-19) travel advice</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot4">
+      <h2>DesiTraveller</h2>
+      <p>Copyright 2022 DesiTraveller | All rights reserved</p>
+      <p>Website designed and Made by - <b>Rajkamal Yadav</b></p>
+    </div>
+  </footer>
+  <script src="style.js"></script>
+  <script src="letsgo.js"></script>
+  <script src="https://kit.fontawesome.com/13dda6b84a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
